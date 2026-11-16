@@ -58,6 +58,21 @@ data-type="percent" data-price="0.12" <!-- +12% к работам -->
 
 ## Публикация
 
-Подойдёт любой статический хостинг: GitHub Pages, Netlify, Vercel, Cloudflare Pages или обычный хостинг с загрузкой по FTP. Достаточно загрузить три папки/файла: `index.html`, `css/`, `js/`.
+Сайт уже опубликован на GitHub Pages:
+
+**https://alleksandrovish12-pixel.github.io/kvadrat-remont/**
+
+Репозиторий: `https://github.com/alleksandrovish12-pixel/kvadrat-remont` (публичный, ветка `main`, источник Pages — корень).
+
+Чтобы обновить сайт после правок, запустите в папке проекта:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File "deploy-github.ps1"
+```
+
+Скрипт загрузит изменённые файлы через GitHub API и дождётся сборки Pages. Обновление занимает 1–2 минуты.
+
+Подойдёт и любой другой статический хостинг: Netlify, Vercel, Cloudflare Pages или обычный хостинг с загрузкой по FTP. Достаточно загрузить `index.html`, `css/` и `js/`.
+
 
 Шрифты Manrope и Inter подключены с Google Fonts; при отсутствии интернета используются системные шрифты.
